@@ -60,7 +60,7 @@
 }
 .box-two__wrapper {
     max-width: 90%;
-    margin: auto;
+    margin: 150px auto;
 }
 .wrapper__headline {
     font-family: Inter;
@@ -70,16 +70,23 @@
 .wrapper__desc {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
     
 }
 .desc__subtitle {
     font-family: Inter;
     font-size: 32px;
     font-weight: 500;
+    
+}
+.desc__control {
+    display: flex;
+    gap: 24px; 
 }
 .wrapper__holder {
     display: flex;
     justify-content: space-between;
+    margin-top: 89px;
 }
 .holder__image {
     width: 570px;
@@ -90,7 +97,7 @@
     font-size: 32px;
     font-weight: 500;
     list-style-type: none;
-    margin-inline-start: 0;
+    margin-top: 0;
 
 }
 .aside__btn { 
@@ -101,15 +108,18 @@
     background-color: #313A5F;
     color: #ffffff;
     font-size: 24px;
-    margin-bottom: 0;
+    margin-top: 89px;
 }
 
-.list__element {
+.list__element:not(:first-child) {
     display: block;
+    margin-top: 32px;
 }
 .list__element::after{
     content: '';
     height: 2px;
-    width: 20px;
+    width: 100px;
+    border-bottom: #313A5F;
     background-color: black;
+    margin: 10px auto 0;
 }
