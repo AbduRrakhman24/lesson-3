@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="project.css" >
 </head>
 <body>
-    <div class="box-one">
+    <header class="menu">
+        <div class="bg--blue">
         <div class="wrapper">
-            <div class="head"> 
+            <nav class="head"> 
                 <div class="head__nav">
-                    <div class="nav_item">портфолио</div>
-                    <div class="nav_item">обо мне</div>
-                    <div class="nav_item">контакты</div>
+                    <div class="nav__item"><a class="nav--link" href="#portfolio">портфолио</a></div>
+                    <div class="nav__item"><a class="nav--link" href="#about--me">обо мне</a></div>
+                    <div class="nav__item"><a class="nav--link" href="#contact">контакты</a></div>
                 </div>
-            </div>
+            </nav>    
+        </div>
+        </div>
+        <div class="bg--blue">
+        <div class="wrapper">
             <div class="holder">
                 <div class="holder__header">
                     <h1 class="header__title">Меня зовут АбдуРахман</h1>
@@ -24,18 +29,20 @@
                 </div>
                 <img src="Me.png" alt="Мое фото" class="foto"> 
             </div>
-       </div>
-    </div>
-    <div class="box-two">
+        </div>
+        </div>
+    </header>
+    <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <h1 class="wrapper__headline">Портфолио</h1>
+            <div class="portfolio__slide">
             <div class="wrapper__desc">
                 <div class="desc__subtitle">AL DIGITAL CORPORATE PRESENTATION TEMPLATE</div>
                 <div class="desc__control">
-                    <svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="control__vector">
                         <path d="M57.9771 28.32L6.40575 28.32L13.8517 20.8943L12.1786 19.2257L1.87643 29.5L12.1786 39.7743L13.8517 38.1057L6.40575 30.68L57.9771 30.68V28.32Z" fill="black"/>
                         </svg>
-                    <svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="control__vector">
                         <path d="M1.35986 30.68H52.9312L45.4852 38.1057L47.1583 39.7743L57.4605 29.5L47.1583 19.2257L45.4852 20.8943L52.9312 28.32H1.35986V30.68Z" fill="black"/>
                         </svg>           
                 </div>
@@ -56,12 +63,14 @@
                     <button class="aside__btn">Посмотреть</button>
                 </div>
             </div>
+            </div>
         </div>
-    </div>
-    <div class="box-three">
+    </section>
+    <section class="about--me" id="about--me">
+        <div class="bg--blue">
         <div class="wrapper">
-            <div class="box-three__holder">
-                <div class="box-three__desc">
+            <div class="about--me__holder">
+                <div class="about--me__desc">
                     <h1 class="desc__name">Обо мне</h1>
                     <p class="desc__text">Lorem Ipsum is simply dummy text 
                         of the printing and typesetting industry. 
@@ -70,34 +79,35 @@
                         when an unknown printer took a galley of type and 
                         scrambled it to make a type specimen book.</p>
                 </div>
-                <img src="Me.png" alt="Me" class="box-three__img">
+                <img src="Me.png" alt="Me" class="about--me__image">
             </div>
         </div>
-    </div>
-    <div class="box-four">
+        </div>
+    </section>
+    <footer class="contact" id="contact">
         <div class="wrapper">
-            <div class="box-four__holder">
-                <h1 class="box-four__name">Обсудим проект?</h1>
-                <h2 class="box-four__head--feedback">Заполните форму обатной связи</h2>
-                <div class="box-four__feedback">
+            <div class="contact__holder">
+                <h1 class="contact__name">Обсудим проект?</h1>
+                <h2 class="contact__info">Заполните форму обатной связи</h2>
+                <div class="contact__feedback">
                     <div class="feedback__element">Ваше имя</div>
-                    <input type="text" value="АбдуРахман" class="feedback__input">
+                    <input type="text" placeholder="АбдуРахман" class="feedback__input">
                     <div class="feedback__element">Ваш email</div>
-                    <input type="text" value="mail@example.com" class="feedback__input">
+                    <input type="text" placeholder="mail@example.com" class="feedback__input">
                     <div class="feedback__element">Ваш телефон</div>
-                    <input type="text" value="+7928 777 65 55" class="feedback__input">
+                    <input type="text" placeholder="+7928 777 65 55" class="feedback__input">
                     <button class="feedback__button">отправить</button>
                 </div>
-                <p class="box-four__aside">Или свяжитесь со мной удобным 
+                <p class="contact__aside">Или свяжитесь со мной удобным 
                     способом связи, расположенным ниже</p>
-                <ul class="box-four__footer">
-                    <li class="footer__element">TELEGRAM</li>
-                    <li class="footer__element">WHATSAPP</li>
-                    <li class="footer__element">INSTAGRAMM</li>
-                    <li class="footer__element">E-MAIL</li>
+                <ul class="contact__footer">
+                    <li class="footer__element"><a class="contact--link" href="http://">TELEGRAM</a></li>
+                    <li class="footer__element"><a class="contact--link" href="http://">WHATSAPP</a></li>
+                    <li class="footer__element"><a class="contact--link" href="http://">INSTAGRAMM</a></li>
+                    <li class="footer__element"><a class="contact--link" href="mailto:">E-MAIL</a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
