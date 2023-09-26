@@ -27,7 +27,7 @@
                     <p class="header__text">Lorem Ipsum is simply dummy text of the
                      printing and typesetting industry. </p>
                 </div>
-                <img src="Me.png" alt="Мое фото" class="foto"> 
+                <img src="image\Me.png" alt="Мое фото" class="foto"> 
             </div>
         </div>
         </div>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="wrapper__holder">
-                <img src="page.png" alt="картинка" class="holder__image">
+                <img src="image/page.png" alt="картинка" class="holder__image">
                 <div class="holder__aside">
                     <ul class="aside__list">
                         <li class="list__element">ux / ui design</li>
@@ -79,7 +79,7 @@
                         when an unknown printer took a galley of type and 
                         scrambled it to make a type specimen book.</p>
                 </div>
-                <img src="Me.png" alt="Me" class="about--me__image">
+                <img src="image/Me.png" alt="Me" class="about--me__image">
             </div>
         </div>
         </div>
@@ -91,12 +91,13 @@
                 <h2 class="contact__info">Заполните форму обатной связи</h2>
                 <div class="contact__feedback">
                     <div class="feedback__element">Ваше имя</div>
-                    <input type="text" placeholder="АбдуРахман" class="feedback__input">
+                    <input type="text" placeholder="АбдуРахман" class="feedback__input" id="name">
                     <div class="feedback__element">Ваш email</div>
-                    <input type="text" placeholder="mail@example.com" class="feedback__input">
+                    <input type="email" placeholder="mail@example.com" class="feedback__input" id="email">
                     <div class="feedback__element">Ваш телефон</div>
-                    <input type="text" placeholder="+7928 777 65 55" class="feedback__input">
-                    <button class="feedback__button">отправить</button>
+                    <input type="tel" placeholder="+7928 777 65 55" class="feedback__input" id="tel">
+                    <button class="feedback__button" id="btn_send">отправить</button>
+                        
                 </div>
                 <p class="contact__aside">Или свяжитесь со мной удобным 
                     способом связи, расположенным ниже</p>
@@ -109,5 +110,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="mains.js"></script>
 </body>
 </html>

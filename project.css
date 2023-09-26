@@ -1,3 +1,6 @@
+*, ::placeholder, :focus {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: Inter, sans-serif
@@ -187,9 +190,9 @@ body {
     margin-inline: auto;
 }
 .contact__feedback {
-    width: 750px;
+    max-width:  750px;
     margin-inline: auto;
-}
+}   
 .feedback__element {
     font-size: 20px;
     font-weight: 400;
@@ -197,22 +200,23 @@ body {
 }
 .feedback__input {
     width: 100%;
-    height: 0;
-    font-size: 24px;
-    font-weight: 500;
-    border-radius: 58px;
-    padding: 20px 0 20px;
+    padding: 20px 0 20px 30px;
     margin-bottom: 35px;
-    
-}
+    box-sizing: border-box;
+    border: 3px solid #313A5F;
+    border-radius: 58px;
+    font-weight: 500;
+    font-size: 20px;
+  }
 .feedback__input::placeholder {
-    color: #212529;
-    opacity: 0.4;
-    padding: 30px;
+    opacity: 0.9;
+    border: 2px;
 }
 .feedback__input:focus {
     color: black;
     padding-left: 30px;
+    padding-right: 0;
+    outline: 0;
 }
 .feedback__button {
     width: 100%;
@@ -223,7 +227,8 @@ body {
     font-weight: 500;
     color: #ffffff;
     margin-top: 35px;
-    padding-block: 10px;
+    padding-block: 20px;
+    text-transform: capitalize;
 }
 .feedback__button:hover {
     cursor: pointer;
