@@ -16,8 +16,7 @@ body {
 }
 .head {
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 .head__nav {
     display: flex;
@@ -28,7 +27,6 @@ body {
     margin-top: 46px;
     gap: 40px;
     text-transform: capitalize;
-   
 }
 .nav__item:hover {
     cursor: pointer;
@@ -142,21 +140,21 @@ body {
 
 /*about--me*/
 
-.about--me__holder {
+.about__holder {
     display: flex;
     justify-content: space-between;
     gap: 95px;
     padding-block: 54px 89px;
     
 }
-.desc__name {
+.about__name {
     font-size: 74px;
     font-weight: 500;
     line-height: 90px;
     color:#ffffff;
     margin: 0;
 }
-.desc__text {
+.about__text {
     max-width: 550px;
     font-size: 32px;
     font-weight: 400;
@@ -165,11 +163,11 @@ body {
     margin-top: 100px;
     color:#ffffff;
 }
-.about--me__image {
+.about__image {
+    display: block;
     width: 475px;
     height: 536px;
     margin-top: 82px;
-    
 }
 
 /*contact*/
@@ -217,6 +215,9 @@ body {
     padding-left: 30px;
     padding-right: 0;
     outline: 0;
+}
+.feedback__input:hover {
+    border-color: #1608d4;
 }
 .feedback__button {
     width: 100%;

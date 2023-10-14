@@ -6,13 +6,19 @@ const maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
 const mask = IMask(inputTel, maskOptions);
-
 function tempName() {
     if (inputName.value.length < 2){
-        inputName.value = 'Error'
+        inputName.style.borderColor = 'red'
         return
     } 
-    alert(inputName.value);
+    inputName.style.borderColor = 'green';
 };
+function tempTel() {
+    if (mask.value = null) {
+    return   mask.style.borderColor = 'red' 
+    }    
+}
+
 
 btnSend.addEventListener('click', tempName);    
+btnSend.addEventListenerd('click', tempTel)
